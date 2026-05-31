@@ -1,4 +1,4 @@
-    #include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
     int T;
@@ -6,7 +6,7 @@ int main(){
     while(T--){
         int x,y;
         cin>>x>>y;
-        if((x+y)%3==0 && x>y && abs(x)>abs(y)){
+        if((x+y)%3==0 && x >= 2 * y && x >= -4 * y){
             cout<<"YES\n";
         }
         else{

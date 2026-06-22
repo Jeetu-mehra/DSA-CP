@@ -17,8 +17,10 @@ int main(){
         int k=n-2;
         int i=0;
         while(k--){
-            a.push_back((a[i]%a[i+1]));
-            i++;
+            if(a[i]%a[i+1]!=0){
+                a.push_back((a[i]%a[i+1]));
+                i++;
+            }
         }
         if(a==b) cout<<b[0]<<" "<<b[1];
         else cout<<-1;
